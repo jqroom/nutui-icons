@@ -52,5 +52,4 @@ const Add = (props: IconProps) => {
         ></span>
     </>
 }
-Add.defaultProps = defaultProps
 export default Add

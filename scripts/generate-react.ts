@@ -13,7 +13,8 @@ import {FunctionComponent} from 'react'
 import Icon, {defaultProps, SVG_IconProps} from '../IconTemplate'
 
 const Add:FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
-    return <Icon {...props} name={props.name || '${compoentName}'} viewBox={'${viewBox}'}>
+    const realProps = { ...defaultProps, ...props }
+    return <Icon {...realProps} name={realProps.name || '${compoentName}'} viewBox={'${viewBox}'}>
         ${d.map(d => {
         return `<path
         d="${d}"
@@ -24,7 +25,6 @@ const Add:FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
     </Icon>
 }
 
-Add.defaultProps = defaultProps
 export default Add
 `
     return template
@@ -50,11 +50,11 @@ import {FunctionComponent} from 'react'
 import Icon, {defaultProps, SVG_IconProps} from '../IconTemplate'
 
 const IconSVG:FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
-    return <Icon {...props} name={props.name || '${compoentName}'} svg64={'${svg64String}'}>
+    const realProps = { ...defaultProps, ...props }
+    return <Icon {...realProps} name={realProps.name || '${compoentName}'} svg64={'${svg64String}'}>
     </Icon>
 }
 
-IconSVG.defaultProps = defaultProps
 export default IconSVG
 `
     return template

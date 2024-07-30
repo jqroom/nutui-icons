@@ -1,2 +1,2 @@
-import { iconsConfig } from '../components/iconsConfig';
+import { iconsConfig } from "../components/iconsConfig";
 export { iconsConfig };

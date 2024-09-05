@@ -25,7 +25,7 @@ export const defaultProps = {
 
 const Icon: FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
     const classPrefix = globalConfig.classPrefix
-    const {viewBox, className, style, name, color, width, height, onClick} = {...defaultProps, ...props}
+    const {viewBox, className, style, name, color, width, height, children, onClick} = {...defaultProps, ...props}
     const handleClick: React.MouseEventHandler = (e) => {
         onClick && onClick(e)
     }
@@ -62,9 +62,8 @@ const Icon: FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
             aria-labelledby={name}
             role="presentation"
         >
-            {props.children}
+            {children}
         </svg>
     </>
 }
-Icon.defaultProps = defaultProps
 export default Icon

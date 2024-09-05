@@ -78,5 +78,4 @@ export default function Icon<T>(props: Partial<IconProps> & T): ReactElement {
     )
 }
 
-Icon.defaultProps = defaultProps
 Icon.displayName = 'NutIcon'

@@ -38,6 +38,7 @@ const Icon: FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
         height,
         size,
         svg64,
+        children,
         onClick,
         fallback = !globalConfig.useSvg
     } = {...defaultProps, ...props}
@@ -77,7 +78,6 @@ const Icon: FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
         style: getStyle(),
         onClick: handleClick,
         color
-    }, props.children)
+    }, children)
 }
-Icon.defaultProps = defaultProps
 export default Icon

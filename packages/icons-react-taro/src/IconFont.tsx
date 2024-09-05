@@ -86,7 +86,6 @@ const Icon: FunctionComponent<IconFontProps> = (props: IconFontProps) => {
     )
 }
 
-Icon.defaultProps = defaultProps
 Icon.displayName = 'NutIcon'
 
 export default Icon

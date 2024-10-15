@@ -1,6 +1,7 @@
 /** 此文件由 script generate 脚本生成 */
     import IconFont from '../IconFont';
-    export { IconFont  };
+    import { configure } from "../configure";
+    export { IconFont, configure  };
 
 export { default as Add } from "../components/Add";
 export { default as Apps } from "../components/Apps";

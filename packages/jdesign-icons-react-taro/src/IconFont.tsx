@@ -1,4 +1,6 @@
-import React, {FunctionComponent, ReactHTML} from 'react'
+import React, { FunctionComponent, ReactHTML } from 'react';
+// @ts-ignore
+import jdesignIconsConfig from "../../../jdesign-iconfont/config.json";
 
 export interface IconFontProps {
     name?: string
@@ -63,12 +65,14 @@ const Icon: FunctionComponent<IconFontProps> = (props: IconFontProps) => {
         return {}
     }
     const pxChecked = pxCheck(size || '')
+    const iconsMapping: any = jdesignIconsConfig?.iconsMapping
+        const newName = name && (iconsMapping?.[name] || name)
     return React.createElement<any>(
         type,
         {
             className: isImage
                 ? `nut-icon-img ${className || ''} `
-                : `${fontClassName} nut-icon ${classPrefix}-${name} ${
+                : `${fontClassName} nut-icon ${classPrefix}-${newName} ${
                     className || ''
                 }`,
             style: {

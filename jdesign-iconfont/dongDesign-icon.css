@@ -1,12 +1,12 @@
 
   @font-face {
     font-family: 'nutui-icon';
-    src: url('iconfont.eot'); /* IE9 */
-    src: url('iconfont.eot#iefix') format('embedded-opentype') /* IE6-IE8 */,
-		url('iconfont.woff2') format('woff2') /* chrome、firefox */,
-		url('iconfont.woff') format('woff') /* chrome、firefox */,
-		url('iconfont.ttf') format('truetype') /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */,
-		url('iconfont.svg#nutui-icon') format('svg') /* iOS 4.1- */;
+    src: url('dongDesign-icon.eot'); /* IE9 */
+    src: url('dongDesign-icon.eot#iefix') format('embedded-opentype') /* IE6-IE8 */,
+		url('dongDesign-icon.woff2') format('woff2') /* chrome、firefox */,
+		url('dongDesign-icon.woff') format('woff') /* chrome、firefox */,
+		url('dongDesign-icon.ttf') format('truetype') /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */,
+		url('dongDesign-icon.svg#nutui-icon') format('svg') /* iOS 4.1- */;
   }
 
   .nutui-iconfont{
@@ -39,6 +39,10 @@
 
   .nut-icon-shopping-minus::before {
     content: "\e340";
+  }
+
+  .nut-icon-skip-backward::before {
+    content: "\e207";
   }
 
   .nut-icon-cart-remove-f::before {
@@ -139,6 +143,10 @@
 
   .nut-icon-arrow-circle-right-f::before {
     content: "\e710";
+  }
+
+  .nut-icon-heart-add-f::before {
+    content: "\e03d";
   }
 
   .nut-icon-close-circle::before {
@@ -289,6 +297,10 @@
     content: "\f12f";
   }
 
+  .nut-icon-heart-add::before {
+    content: "\f42f";
+  }
+
   .nut-icon-camera-f::before {
     content: "\e1e1";
   }
@@ -385,7 +397,7 @@
     content: "\f50c";
   }
 
-  .nut-icon-arrow-circle-transfer-f::before {
+  .nut-icon-arrow-transfe-circler-f::before {
     content: "\f0a5";
   }
 
@@ -525,6 +537,10 @@
     content: "\f35b";
   }
 
+  .nut-icon-fast-forward::before {
+    content: "\e129";
+  }
+
   .nut-icon-more-horizontal::before {
     content: "\e720";
   }
@@ -559,6 +575,10 @@
 
   .nut-icon-user-remove::before {
     content: "\f05e";
+  }
+
+  .nut-icon-fast-backward::before {
+    content: "\e4ef";
   }
 
   .nut-icon-packaging-check-f::before {
@@ -741,7 +761,7 @@
     content: "\e8df";
   }
 
-  .nut-icon-arrow-circle-transfer::before {
+  .nut-icon-arrow-transfer-circle::before {
     content: "\e909";
   }
 
@@ -873,7 +893,7 @@
     content: "\efdd";
   }
 
-  .nut-icon-photo-rectangle-f::before {
+  .nut-icon-photo-f::before {
     content: "\edbf";
   }
 
@@ -1117,7 +1137,7 @@
     content: "\eafe";
   }
 
-  .nut-icon-photo-rectangle::before {
+  .nut-icon-photo::before {
     content: "\f343";
   }
 

@@ -5,6 +5,7 @@ export default {
   'nut-icon-face-mild-f': 61717,// face-mild-f
   'nut-icon-chat-f': 61716,// chat-f
   'nut-icon-shopping-minus': 58176,// shopping-minus
+  'nut-icon-skip-backward': 57863,// skip-backward
   'nut-icon-cart-remove-f': 59634,// cart-remove-f
   'nut-icon-invoice-f': 59481,// invoice-f
   'nut-icon-shopping-check-f': 61590,// shopping-check-f
@@ -30,6 +31,7 @@ export default {
   'nut-icon-copy-check-f': 60563,// copy-check-f
   'nut-icon-first-aid-kit-f': 58742,// first-aid-kit-f
   'nut-icon-arrow-circle-right-f': 59152,// arrow-circle-right-f
+  'nut-icon-heart-add-f': 57405,// heart-add-f
   'nut-icon-close-circle': 59711,// close-circle
   'nut-icon-arrow-circle-down-f': 59239,// arrow-circle-down-f
   'nut-icon-filter-f': 62014,// filter-f
@@ -67,6 +69,7 @@ export default {
   'nut-icon-search': 60698,// search
   'nut-icon-microphone-mute': 59933,// microphone-mute
   'nut-icon-store': 61743,// store
+  'nut-icon-heart-add': 62511,// heart-add
   'nut-icon-camera-f': 57825,// camera-f
   'nut-icon-sort-vertical': 58278,// sort-vertical
   'nut-icon-circle-f': 61760,// circle-f
@@ -91,7 +94,7 @@ export default {
   'nut-icon-search-f': 62657,// search-f
   'nut-icon-shopping-f': 60658,// shopping-f
   'nut-icon-logout': 62732,// logout
-  'nut-icon-arrow-circle-transfer-f': 61605,// arrow-circle-transfer-f
+  'nut-icon-arrow-transfe-circler-f': 61605,// arrow-transfer-circle-f
   'nut-icon-server': 61308,// server
   'nut-icon-thumbs-down': 58233,// thumbs-down
   'nut-icon-bookmark-f': 60248,// bookmark-f
@@ -126,6 +129,7 @@ export default {
   'nut-icon-shopping': 57906,// shopping
   'nut-icon-user': 61193,// user
   'nut-icon-bell-unread': 62299,// bell-unread
+  'nut-icon-fast-forward': 57641,// fast-forward
   'nut-icon-more-horizontal': 59168,// more-horizontal
   'nut-icon-volume-off-f': 60790,// volume-off-f
   'nut-icon-voucher': 58875,// voucher
@@ -135,6 +139,7 @@ export default {
   'nut-icon-volume-off': 62261,// volume-off
   'nut-icon-angle-up': 57438,// angle-up
   'nut-icon-user-remove': 61534,// user-remove
+  'nut-icon-fast-backward': 58607,// fast-backward
   'nut-icon-packaging-check-f': 57454,// packaging-check-f
   'nut-icon-filter-v': 59850,// filter-v
   'nut-icon-warning-polygon': 59385,// warning-polygon
@@ -180,7 +185,7 @@ export default {
   'nut-icon-receipt': 59355,// receipt
   'nut-icon-caret-right-f': 61352,// caret-right-f
   'nut-icon-grip-vertical': 59615,// grip-vertical
-  'nut-icon-arrow-circle-transfer': 59657,// arrow-transfer-circle
+  'nut-icon-arrow-transfer-circle': 59657,// arrow-transfer-circle
   'nut-icon-wallet-f': 57867,// wallet-f
   'nut-icon-fast-forward-f': 58837,// fast-forward-f
   'nut-icon-cart-arrow-down-f': 59265,// cart-arrow-down-f
@@ -213,7 +218,7 @@ export default {
   'nut-icon-back-to-top': 62703,// back-to-top
   'nut-icon-robot': 59754,// robot
   'nut-icon-cart-arrow-up-f': 61405,// cart-arrow-up-f
-  'nut-icon-photo-rectangle-f': 60863,// photo-f
+  'nut-icon-photo-f': 60863,// photo-f
   'nut-icon-plugin': 58458,// plugin
   'nut-icon-store-f': 61051,// store-f
   'nut-icon-darkness': 61101,// darkness
@@ -274,7 +279,7 @@ export default {
   'nut-icon-pin-f': 58276,// pin-f
   'nut-icon-brush-f': 57865,// brush-f
   'nut-icon-package-arrow-down-f': 60158,// package-arrow-down-f
-  'nut-icon-photo-rectangle': 62275,// photo
+  'nut-icon-photo': 62275,// photo
   'nut-icon-edit-f': 59220,// edit-f
   'nut-icon-copy': 61085,// copy
   'nut-icon-server-f': 57834,// server-f

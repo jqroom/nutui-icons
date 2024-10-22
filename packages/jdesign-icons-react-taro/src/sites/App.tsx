@@ -1,7 +1,8 @@
-import '../style_iconfont.scss'
+import { Cell, CellGroup, Toast, } from '@nutui/nutui-react'
+import icons from "../../../../jdesign-iconfont/config.json"
+import Icon from '../IconFont'
 import Add from '../components/Add'
-import icons from "../../../../iconfont/config.json"
-import {Icon, Cell, CellGroup, Toast,} from '@nutui/nutui-react'
+import '../style_iconfont.scss'
 
 
 const generateCopyText = (name: string) => {

@@ -1,4 +1,4 @@
-import {camelCase} from './camelcase'
+import { camelCase } from './camelCase';
 import glob from 'glob'
 import path from 'path'
 import fsExtra from 'fs-extra';

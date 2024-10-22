@@ -1,4 +1,6 @@
-import {FunctionComponent} from "react";
+import { FunctionComponent } from "react";
+// @ts-ignore
+import jdesignIconsConfig from "../../../jdesign-iconfont/config.json";
 
 export interface SVG_IconProps {
     className?: string
@@ -35,7 +37,9 @@ const Icon: FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
         return isNaN(Number(value)) ? String(value) : value + "px";
     };
     const classes = () => {
-        return `nut-icon nut-icon-${name} ${className}`
+        const iconsMapping: any = jdesignIconsConfig?.iconsMapping
+        const newName = name && (iconsMapping?.[name] || name)
+        return `nut-icon nut-icon-${newName} ${className}`
     };
     const props2Style:any = {}
     const checkedWidth = pxCheck(width || size || '')

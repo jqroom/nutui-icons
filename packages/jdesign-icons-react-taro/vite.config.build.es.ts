@@ -5,6 +5,8 @@ import {iconsConfig} from './src/components/iconsConfig'
 
 let input = {
   IconFont: `./src/IconFont.tsx`,
+  configure: `./src/configure.ts`,
+  internal: `./src/internal.ts`,
   IconFontConfig: `./src/buildEntry/iconFontConfig.ts`,
   SvgConfig: `./src/buildEntry/svgConfig.ts`,
 } as any;

@@ -48,7 +48,7 @@ const Icon: FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
     const handleClick: React.MouseEventHandler = (e) => {
         onClick && onClick(e)
     }
-    
+
     const pxCheck = (value: string | number): number => {
         if (value === '') return 0
         return parseInt(value as string);
@@ -70,10 +70,10 @@ const Icon: FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
         return {
             ...style,
             ...props2Style,
-            ...{color}
+            color
         }
     }
-    
+
     return React.createElement<any>('Image', {
         src: svgSrc,
         className: classes(),

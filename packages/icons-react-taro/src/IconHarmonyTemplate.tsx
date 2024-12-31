@@ -1,5 +1,6 @@
 import React, {FunctionComponent} from "react";
 import {globalConfig} from "./internal";
+
 export interface SVG_IconProps {
     className?: string
     style?: React.CSSProperties
@@ -47,9 +48,10 @@ const Icon: FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
     const handleClick: React.MouseEventHandler = (e) => {
         onClick && onClick(e)
     }
-    const pxCheck = (value: string | number): string => {
-        if (value === '') return ''
-        return isNaN(Number(value)) ? String(value) : value + "px";
+
+    const pxCheck = (value: string | number): number => {
+        if (value === '') return 0
+        return parseInt(value as string);
     };
     const classes = () => {
         const iconName = fallback ? name?.toLowerCase() : name
@@ -67,19 +69,17 @@ const Icon: FunctionComponent<SVG_IconProps> = (props: SVG_IconProps) => {
     const getStyle = () => {
         return {
             ...style,
-            ...(fallback ? {} : {
-                backgroundColor: color || 'currentColor',
-                mask: `url('${svg64}')  0 0/100% 100% no-repeat`,
-                '-webkitMask': `url('${svg64}') 0 0/100% 100% no-repeat`,
-            }),
-            ...props2Style
+            ...props2Style,
+            color
         }
     }
-    return React.createElement<any>(globalConfig.tag, {
+
+    return React.createElement<any>('Image', {
+        src: svgSrc,
         className: classes(),
         style: getStyle(),
         onClick: handleClick,
-        color
+        svg: true
     }, children)
 }
 export default Icon

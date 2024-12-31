@@ -90,7 +90,7 @@ if (projectID) {
     export { IconFont, config };
 \n`;
 
-  // pattern = `${process.cwd()}/packages/${projectID}-icons-svg/*.svg`;
+  pattern = `${process.cwd()}/packages/${projectID}-icons-svg/*.svg`;
   iconsReactDir = `${projectID}-icons-react`;
   iconsReactTaroDir = `${projectID}-icons-react-taro`;
 }
